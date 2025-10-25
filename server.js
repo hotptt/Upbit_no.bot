@@ -23,9 +23,9 @@ saveCfg(cfg);
 const DISCORD_WEBHOOK = process.env.DISCORD_WEBHOOK || "";
 const DISCORD_TOKEN = process.env.DISCORD_TOKEN || "";
 const DISCORD_GUILD_ID = process.env.DISCORD_GUILD_ID || "";
-if(!DISCORD_WEBHOOK or DISCORD_WEBHOOK===""){ throw new Error("Set DISCORD_WEBHOOK"); }
-if(!DISCORD_TOKEN or DISCORD_TOKEN===""){ throw new Error("Set DISCORD_TOKEN"); }
-if(!DISCORD_GUILD_ID or DISCORD_GUILD_ID===""){ throw new Error("Set DISCORD_GUILD_ID"); }
+if(!DISCORD_WEBHOOK || DISCORD_WEBHOOK === ""){throw new Error("Set DISCORD_WEBHOOK"); }
+if(!DISCORD_TOKEN || DISCORD_TOKEN===""){ throw new Error("Set DISCORD_TOKEN"); }
+if(!DISCORD_GUILD_ID || DISCORD_GUILD_ID===""){ throw new Error("Set DISCORD_GUILD_ID"); }
 
 let lastUp=0,lastDown=0, ws, reconnectTimer=null, attempts=0;
 function relPct(p,a){ return (p/a-1)*100; }
