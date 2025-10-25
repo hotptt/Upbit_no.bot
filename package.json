@@ -1,0 +1,10 @@
+{
+  "name": "upbit-discord-bot-server",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "ws": "^8.16.0",
+    "node-fetch": "^3.3.2",
+    "discord.js": "^14.15.3"
+  }
+}
